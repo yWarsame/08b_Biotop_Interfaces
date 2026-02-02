@@ -17,9 +17,15 @@ public class App {
      
     }
 
-
     private static void pollObj(HoneyBee obj){
         output(obj.doYourJob());
+        output(obj.fly());
+        output("-------------------");
+    }
+
+    // überadene Methode
+    private static void pollObj(Bird obj){
+        output(obj.hasFeathers());
         output(obj.fly());
         output("-------------------");
     }
